@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JEDI TA Pedagogy | SUNY UB</title>
+  <style>
+    :root {
+      --ub-blue: #003087;
+      --ub-light-blue: #0072ce;
+      --ub-gray: #666;
+      --white: #fff;
+      --font-sans: 'Helvetica Neue', Arial, sans-serif;
+    }
+    * { box-sizing: border-box; margin:0; padding:0; }
+    body { font-family: var(--font-sans); background: #f4f4f4; color: var(--ub-gray); }
+    header { background: var(--ub-blue); color: var(--white); padding: 1rem; text-align: center; }
+    header img { height: 40px; vertical-align: middle; }
+    header h1 { display: inline-block; margin-left: 1rem; font-size: 1.5rem; vertical-align: middle; }
+    .accordion { display: flex; flex-wrap: wrap; gap: 1rem; max-width: 1200px; margin: 2rem auto; }
+    .accordion-item { background: var(--white); border: 2px solid var(--ub-blue); border-radius: 8px; flex: 1 1 calc(25% - 1rem); min-width: 200px; cursor: pointer; overflow: hidden; transition: border-color 0.3s ease; }
+    .accordion-item.active { border-color: var(--ub-light-blue); }
+    .accordion-header { background: var(--ub-blue); color: var(--white); padding: 1rem; text-align: center; font-weight: bold; }
+    .accordion-content { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.4s ease; }
+    .accordion-content.open { padding: 1rem; max-height: 1000px; }
+    .issue { border: 1px solid var(--ub-gray); border-radius: 6px; margin: 0.5rem 0; padding: 0.75rem; background: #fafafa; cursor: pointer; }
+    .issue:hover { background: #f0f0f0; }
+    .issue.active { border-color: var(--ub-light-blue); }
+    .solution { max-height: 0; overflow: hidden; transition: max-height 0.3s ease, padding 0.3s ease; padding: 0 0.75rem; }
+    .solution.open { padding: 0.75rem; max-height: 500px; background: #fff; border-left: 4px solid var(--ub-light-blue); margin-bottom: 0.5rem; }
+    .diagram { text-align: center; margin: 1rem 0; }
+    .diagram img { max-width: 100%; height: auto; border: 1px solid var(--ub-gray); border-radius: 4px; }
+    footer { background: var(--ub-blue); color: var(--white); text-align: center; padding: 1rem; margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="ub_logo.png" alt="UB Logo">
+    <h1>Justice, Equity, Diversity & Inclusion TA Pedagogy</h1>
+  </header>
+
+
+
+  <div class="accordion">
+    <!-- Office Hours -->
+    <div class="accordion-item" data-topic="office-hours">
+      <div class="accordion-header">Office Hours</div>
+      <div class="accordion-content">
+        <div class="diagram">
+          <img src="Screenshot_2025-04-24_at_10.35.19_AM.png" alt="Pedagogy Flow Diagram">
+        </div>
+        <div class="issues-container">
+          <div class="issue" data-issue="1">
+            <strong>Common Issue #1:</strong> Students reluctant to discuss personal challenges.
+          </div>
+          <div class="solution" data-issue="1">
+            <p><strong>Solution #1:</strong> Offer anonymous sign-up and optional breakout rooms to encourage sharing.</p>
+          </div>
+
+          <div class="issue" data-issue="2">
+            <strong>Common Issue #2:</strong> Scheduling conflicts in diverse time zones.
+          </div>
+          <div class="solution" data-issue="2">
+            <p><strong>Solution #2:</strong> Rotate office hour times and record sessions for asynchronous access.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Lectures -->
+    <div class="accordion-item" data-topic="lectures">
+      <div class="accordion-header">Lectures</div>
+      <div class="accordion-content">
+        <div class="issues-container">
+          <div class="issue" data-issue="lect1">Inclusive language and diverse examples.</div>
+          <div class="solution" data-issue="lect1">
+            <p>Use case studies from varied backgrounds and pronounce names correctly to show respect.</p>
+          </div>
+
+          <div class="issue" data-issue="lect2">Active learning with breakouts.</div>
+          <div class="solution" data-issue="lect2">
+            <p>Mix groups randomly and assign roles to ensure balanced participation.</p>
+          </div>
+
+          <div class="issue" data-issue="lect3">Multiple content formats (text, audio, visuals).</div>
+          <div class="solution" data-issue="lect3">
+            <p>Provide transcripts, slide decks, and captioned videos for accessibility.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grading -->
+    <div class="accordion-item" data-topic="grading">
+      <div class="accordion-header">Grading</div>
+      <div class="accordion-content">
+        <div class="issues-container">
+          <div class="issue" data-issue="grad1">Rubric-based grading with clear criteria.</div>
+          <div class="solution" data-issue="grad1">
+            <p>Publish rubrics ahead of time and align feedback to each criterion.</p>
+          </div>
+
+          <div class="issue" data-issue="grad2">Point-by-point feedback for transparency.</div>
+          <div class="solution" data-issue="grad2">
+            <p>Use inline comments and summary notes to explain deductions.</p>
+          </div>
+
+          <div class="issue" data-issue="grad3">Revision opportunities to support learning.</div>
+          <div class="solution" data-issue="grad3">
+            <p>Allow one resubmission per assignment with incremental grading.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Additional Practices -->
+    <div class="accordion-item" data-topic="others">
+      <div class="accordion-header">Additional Practices</div>
+      <div class="accordion-content">
+        <div class="issues-container">
+          <div class="issue" data-issue="oth1">Regular student feedback surveys.</div>
+          <div class="solution" data-issue="oth1">
+            <p>Use anonymous polls to adjust teaching strategies in real-time.</p>
+          </div>
+
+          <div class="issue" data-issue="oth2">Collaborative syllabus co-creation.</div>
+          <div class="solution" data-issue="oth2">
+            <p>Host a kickoff session for students to suggest topics and grading policies.</p>
+          </div>
+
+          <div class="issue" data-issue="oth3">Peer-mentoring study groups.</div>
+          <div class="solution" data-issue="oth3">
+            <p>Pair experienced students with newcomers and track progress milestones.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    &copy; 2025 SUNY University at Buffalo • Division of Diversity, Equity & Inclusion
+  </footer>
+
+  <script>
+    // allowing multiple open
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      item.querySelector('.accordion-header').addEventListener('click', () => {
+        const content = item.querySelector('.accordion-content');
+        const open = content.classList.toggle('open');
+        item.classList.toggle('active', open);
+      });
+    });
+
+    // Issue to Solution toggles
+    document.querySelectorAll('.issue').forEach(issue => {
+      issue.addEventListener('click', () => {
+        const id = issue.getAttribute('data-issue');
+        const sol = document.querySelector(`.solution[data-issue='${id}']`);
+        const isOpen = sol.classList.toggle('open');
+        issue.classList.toggle('active', isOpen);
+      });
+    });
+  </script>
+</body>
+</html>
